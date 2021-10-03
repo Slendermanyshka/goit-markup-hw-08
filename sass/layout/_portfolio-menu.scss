@@ -1,0 +1,66 @@
+.portfolio__button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 94px;
+    
+    @media screen and (min-width:480px) and (max-width:768px){
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        width: 100%;
+       padding-left: 15px;
+       margin: 0px;
+       
+    }
+    @media screen and (min-width:768px) and (max-width:1200px){
+        
+        width: auto;
+    }
+    @media screen and (min-width:1200px){
+        
+        margin-right: 8px;
+        justify-content: center;
+    }
+}
+.portfolio__menu {
+
+    & li{
+    @extend .list; 
+    display: inline;
+    }
+
+    & button{
+        @extend .normal-text;
+        @extend .button; 
+        padding-inline: 22px;
+        background-color: #f5f3fa;
+        color: $h-textcolor;
+        font-weight: 500;
+        line-height: 162%;
+        text-align: center;
+        
+        border: none;
+        border-radius: $button-radius;
+    
+        transition: $animation;
+
+        @media screen and (min-width:480px) and (max-width:768px){
+            margin-bottom: 15px;
+            &:nth-child(5){
+                margin-bottom: 0px;
+            }
+        }
+        
+    }
+
+    & button:hover, button:focus{
+        background-color: $hover-color;
+        color: $background-color;
+    }
+
+    @media screen and (min-width:480px) and (max-width:768px){
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+}

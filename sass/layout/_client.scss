@@ -1,0 +1,81 @@
+.client{
+    padding: 94px 0px;
+    
+    
+    & h2{
+    text-align: center;
+    margin: 0%;
+    padding-bottom: 50px;
+    }
+}
+.client__item{
+        transition: $animation;
+        border: 1px solid #AFB1B8;
+        box-sizing: border-box;
+        border-radius: $button-radius;
+        transition: $animation;
+    
+@media screen and (min-width:480px) and (max-width:768px){
+        width: 210px;
+        height: 92px;
+        margin-bottom: $margin;
+        
+        &:nth-child(odd){
+        margin-right: $margin;
+    }
+    }   
+@media screen and (min-width:769px) and (max-width:1200px){
+        width: 226px;
+        height: 92px;
+        margin-right: $margin;
+        margin-bottom: $margin;
+        
+        
+        &:nth-child(3n){
+            margin-right: 0px;
+        }
+        &:nth-last-child(-n+3){
+            margin-bottom: 0px;
+        }
+}
+@media screen and (min-width:1200px){
+        width: 170px;
+        height: 92px;
+
+        &+.client__item{
+            margin-left: $margin;
+        }
+    }
+    
+    & svg{
+        display: block; 
+        margin: auto;
+        padding-top: 20px;
+        fill: #AFB1B8;
+    
+        transition: $animation;
+    }
+
+}
+
+
+.client__list{
+    @extend .list; 
+    display: flex;
+    justify-content: center; 
+    @media screen and (min-width:480px) and (max-width:768px){
+        flex-wrap: wrap;
+        flex-basis: calc(100%/2);
+    }
+    @media screen and (min-width:768px) and (max-width:1200px){
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px){
+    }
+}
+.client__item:hover{
+    border-color:$hover-color;
+}
+.client__item:hover svg{
+    fill:$hover-color;
+}

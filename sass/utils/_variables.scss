@@ -1,0 +1,57 @@
+
+
+$hover-color:#2196F3;
+$mainbutton-hover:#188ce8;
+$background-color: white;
+$svg-fill: #AFB1B8;
+
+$button-radius: 4px; 
+$margin: 30px;
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$p-textcolor: #757575;
+$h-textcolor: #212121;
+
+.h-title{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.normal-text{
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.body{
+    font-family: "Roboto", BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FFFFFF;
+    margin: 0%;
+}
+.media-icon{
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    border: 0px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container{
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.list{
+    list-style-type: none;
+}
+.button{
+    cursor: pointer;
+}

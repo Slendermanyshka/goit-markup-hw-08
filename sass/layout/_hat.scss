@@ -1,0 +1,76 @@
+.hat{
+    
+    background-color: #2F303A;
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    & h1{
+        @extend .h-title;
+        font-weight: 900;
+        
+        
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $background-color;
+        margin-top: 0px;
+
+        @media screen and (min-width:480px) and (max-width:768px){
+            font-size: 26px;
+            line-height: 162% ;
+        }
+        @media screen and (min-width:768px) and (max-width:1200px){
+            font-size: 26px;
+            line-height: 162%;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 44px;
+            line-height: 136%;
+        }
+    }
+
+    @media screen and (min-width:480px){
+        background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/Mobile-hat-1x.jpg);
+        @media screen and (min-resolution:2dppx) {
+            background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/Mobile-hat-2x.jpg);
+        }
+    }
+    @media screen and (min-width:768px){
+        background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/Table-hat-1x.jpg);
+        @media screen and (min-resolution:2dppx) {
+            background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/Table-hat-2x.jpg);
+        }
+    }
+    @media screen and (min-width:1200px){
+        background-image:linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/Hat-img.jpg);
+        @media screen and (min-resolution:2dppx) {
+            background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/PC-hat-2x.jpg);
+        }
+    }
+}
+.hat button{
+    @extend .normal-text; 
+    @extend .button;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    line-height: 187%;
+    border: none;
+    border-radius: $button-radius;
+    letter-spacing: 0.06em;
+    color: $background-color;
+    background: $hover-color;
+    transition: $animation;
+    
+    margin: auto;
+    display: block;
+
+    &:hover,:focus {
+        background: $mainbutton-hover;
+    }
+
+    
+}

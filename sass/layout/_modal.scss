@@ -1,0 +1,179 @@
+.modal{
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    background-color: $background-color;
+}
+
+.modal__title{
+    @extend .normal-text; 
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+
+    color: $h-textcolor;
+}
+
+.modal__close-button{
+    width: 30px;
+    height: 30px;
+    background: $background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    &:hover svg{
+        fill: $hover-color;
+    }
+}
+
+.modal__label{
+    display: flex;
+    flex-direction: column;
+    height: 58px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 12px;
+
+    & p{
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $p-textcolor;
+        text-align: left;
+    }
+
+    & textarea{
+        resize: none;
+    }
+}
+
+.modal__input{
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 100%;
+    padding-left: 42px;
+
+    transition: $animation;
+
+    &:hover, :focus{
+        border: 1px solid $hover-color;
+    outline: none;
+    }
+}
+
+.modal__textarea-input{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: $button-radius;
+
+    transition: $animation;
+
+    &:focus, :hover{
+        border: 1px solid $hover-color;
+        outline: none;
+    }
+
+    & ::placeholder{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+
+.modal__input:focus ~ .modal__input-icon{
+    fill: $hover-color ;
+}
+
+
+.modal__input-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal__input-wrap{
+    position: relative;
+    display: block;
+}
+.modal__checkbox{
+    display: inline-flex;
+    margin-top: 25px;
+}
+.modal__termsuse-text{
+    display: flex;
+    margin: 0;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-left: 7px;
+
+    &::before{
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: 2px solid $h-textcolor;
+        border-radius: 2px;
+        margin-right: 5px;
+    }
+}
+
+.modal__check:checked + .modal__termsuse-text::before{
+    background-color: $hover-color;
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.modal__check{
+    display: none;
+}
+
+.modal__terms-link{
+    margin-left: 5px;
+    text-decoration-line: underline;
+    color: $hover-color;
+}
+
+.modal__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__send-button{
+    @extend .normal-text; 
+    @extend .button; 
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: $hover-color;
+    border: 0px;
+    border-radius: $button-radius;
+
+    transition: $animation;
+
+    font-weight: bold;
+    line-height: 187%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $background-color;
+
+    &:hover,:focus{
+        background: $mainbutton-hover;
+    }
+}
