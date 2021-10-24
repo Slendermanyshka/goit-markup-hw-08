@@ -1,5 +1,8 @@
 @import './utils/variables';
-@import './layout/header'; 
+
+@import './component/header';
+@import './component/footer';
+@import './component/icon'; 
+
 @import './layout/portfolio-menu';
 @import './layout/portfolio'; 
-@import './layout/footer';

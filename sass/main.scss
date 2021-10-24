@@ -1,6 +1,9 @@
 @import './utils/variables';
 
-@import './layout/header';
+@import './component/header';
+@import './component/footer';
+@import './component/icon';
+
 @import './layout/hat';
 @import './layout/specification';
 @import './layout/activities';

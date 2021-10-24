@@ -17,7 +17,7 @@
         color: $background-color;
         margin-top: 0px;
 
-        @media screen and (min-width:480px) and (max-width:768px){
+        @media screen and (min-width:320px) and (max-width:768px){
             font-size: 26px;
             line-height: 162% ;
         }
@@ -31,7 +31,7 @@
         }
     }
 
-    @media screen and (min-width:480px){
+    @media screen and (min-width:320px){
         background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/Mobile-hat-1x.jpg);
         @media screen and (min-resolution:2dppx) {
             background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/Mobile-hat-2x.jpg);
