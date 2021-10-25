@@ -1337,6 +1337,7 @@ body {
 
 .modal__check:checked + .modal__termsuse-text::before {
   background-color: #2196F3;
+  padding: 2px;
   border: none;
   background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;

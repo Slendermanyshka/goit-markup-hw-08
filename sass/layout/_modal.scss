@@ -111,6 +111,7 @@
 .modal__checkbox{
     display: inline-flex;
     margin-top: 25px;
+    
 }
 .modal__termsuse-text{
     display: flex;
@@ -133,6 +134,7 @@
 
 .modal__check:checked + .modal__termsuse-text::before{
     background-color: $hover-color;
+    padding: 2px;
     border: none;
     background-image: url(../images/Vector.svg);
     background-repeat: no-repeat;
