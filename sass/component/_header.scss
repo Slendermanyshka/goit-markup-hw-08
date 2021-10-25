@@ -10,7 +10,10 @@
   display: flex;
   align-items:center; 
 
-  
+  @media screen and (min-width:320px)and (max-width768){
+    justify-content: center;
+    flex-direction: column;
+}
   @media screen and (min-width:1200px){
       justify-content: center;
   }
@@ -196,11 +199,14 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: white;
   z-index: 10;
+
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width:768px) and (max-width:1200px){
       display: none;
@@ -235,9 +241,14 @@
 }
 
 
+.container__for__bottom__part{
+  align-self: flex-end;
+}
+
 .contacts-menu__container{
-  margin-top: 112px;
   margin-left: 40px;
+  margin-top: auto;
+
 }
 .navigation-menu{
   @extend .list; 
@@ -259,7 +270,7 @@
 }
 
 .menu-container__social{
-  
+  margin-bottom: 48px;
   margin-left: 40px;
   margin-top: 64px
 }
